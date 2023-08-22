@@ -1,0 +1,89 @@
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git remote add origin https://github.com/JuanCarlosPeTorres/Checkpoint-JuanPeTorres.git
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git commit -m "commit 01 de juanPeTorres"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git add .
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git commit -m "commit 02 de juanPeTorres"
+[main (root-commit) bd47627] commit 02 de juanPeTorres
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 239 bytes | 239.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JuanCarlosPeTorres/Checkpoint-JuanPeTorres.git
+ * [new branch]      main -> main
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git branch feature
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (feature)
+$ mkdir Hardware
+mkdir Software
+mkdir SeguridadInformatica
+
+touch Hardware/resumen.txt
+touch Software/resumen.txt
+touch SeguridadInformatica/resumen.txt
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (feature)
+$ git add .
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (feature)
+$ git commit -m "commit 03 de juanPeTorres"
+[feature a300ab8] commit 03 de juanPeTorres
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 374 bytes | 374.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/JuanCarlosPeTorres/Checkpoint-JuanPeTorres/pull/new/feature
+remote:
+To https://github.com/JuanCarlosPeTorres/Checkpoint-JuanPeTorres.git
+ * [new branch]      feature -> feature
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (feature)
+$ git checkout main
+Switched to branch 'main'
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ git mv main.js resumenHardware.txt
+git mv index.html resumenSoftware.txt
+
+juanc@JC MINGW64 ~/Desktop/Checkpoint-JuanPeTorres (main)
+$ touch comandos.txt
